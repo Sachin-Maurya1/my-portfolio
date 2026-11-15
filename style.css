@@ -181,10 +181,11 @@
                 background-color: #f1f5f9;
                 padding: 25px;
                 width: 220px;
-                border-radius: 10px;
+                border-radius: 12px;
                 text-align: center;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-                transition: 0.3s ease;
+                transition: all 0.3s ease;
+                border: 1px solid #e2e8f0;
             }
 
             .detail h3 {
