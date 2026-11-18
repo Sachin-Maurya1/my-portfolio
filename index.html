@@ -28,7 +28,7 @@
             <h1>Hello, I'm Sachin</h1>
 
             <h2>I'm a Web Developer</h2>
- 
+
             <p>
                 I create modern and responsive websites
                 using HTML, CSS and JavaScript.
@@ -200,30 +200,21 @@
             <p>Have a project in mind? Let's talk!</p>
 
 
-<form id="contact-form">
-    <input
-        type="text"
-        name="name"
-        placeholder="Your Name"
-        required
-    >
+            <form action="https://api.web3forms.com/submit" method="POST">
 
-    <input
-        type="email"
-        name="email"
-        placeholder="Your Email"
-        required
-    >
+                <input type="hidden" name="access_key" value="581a6600-9d9f-42d0-a8a2-eeb627eda076">
 
-    <textarea
-        name="message"
-        placeholder="Your Message"
-        rows="5"
-        required
-    ></textarea>
+                <input type="text" name="name" placeholder="Your Name" required>
 
-    <button type="submit">Send Message</button>
-</form>
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                <div class="h-captcha" data-captcha="true"></div>
+
+                <button type="submit">Send Message</button>
+
+            </form>
         </div>
     </section>
     <footer class="footer">
@@ -231,13 +222,14 @@
         <div class="social-links">
             <a href="https://github.com/Sachin-Maurya1" target="_blank" rel="noopener noreferrer">
                 GitHub
-            </a> 
+            </a>
             <a href="#">LinkedIn</a>
             <a href="#">Instagram</a>
         </div>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 
 </html>
