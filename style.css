@@ -142,29 +142,30 @@
 
             /* about section */
             .about {
-                padding: 80px 20px;
+                padding: 90px 20px;
                 background-color: #ffffff;
 
             }
 
             .about-content {
-                max-width: 900px;
+                max-width: 950px;
                 margin: auto;
                 text-align: center;
             }
 
             .about h2 {
-                font-size: 36px;
+                font-size: 38px;
                 color: #1e293b;
-                margin-bottom: 25px;
+                margin-bottom: 30px;
+                font-weight: 700;
 
             }
 
             .about p {
                 font-size: 17px;
                 color: #475569;
-                line-height: 1.8;
-                margin-bottom: 15px;
+                line-height: 1.9;
+                margin-bottom: 18px;
             }
 
             /* about detail */
@@ -173,17 +174,17 @@
                 justify-content: center;
                 gap: 25px;
                 flex-wrap: wrap;
-                margin-top: 40px;
+                margin-top: 45px;
 
             }
 
             .detail {
                 background-color: #f1f5f9;
-                padding: 25px;
+                padding: 28px 22px;
                 width: 220px;
-                border-radius: 12px;
+                border-radius: 14px;
                 text-align: center;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
                 transition: all 0.3s ease;
                 border: 1px solid #e2e8f0;
             }
@@ -191,18 +192,21 @@
             .detail h3 {
                 color: #2563eb;
                 font-size: 21px;
-                margin-bottom: 12px;
+                margin-bottom: 15px;
 
             }
 
             .detail p {
                 color: #475569;
                 font-size: 15px;
+                line-height: 1.7;
 
             }
 
             .detail:hover {
-                transform: translateY(-5px);
+                transform: translateY(-7px);
+                box-shadow: 0 10px 22px rgba(0, 0, 0, 0, 12);
+                border-color: #2563eb;
             }
 
             /* about section responsive */
@@ -236,18 +240,33 @@
             }
 
             /* skills section css */
+
             .skills {
-                padding: 80px 10%;
+                padding: 90px 10%;
                 background-color: #111827;
                 color: white;
                 text-align: center;
-
             }
 
             .skills h2 {
                 font-size: 36px;
-                margin-bottom: 40px;
+                margin-bottom: 45px;
+                color: #ffffff;
+                font-weight: 700;
             }
+
+            .skills-group {
+                margin-bottom: 50px;
+            }
+
+            .skills-group>h3 {
+                font-size: 26px;
+                color: #60a5fa;
+                margin-bottom: 30px;
+                font-weight: 600;
+            }
+
+
 
             .skills-container {
                 display: flex;
@@ -256,30 +275,34 @@
                 flex-wrap: wrap;
             }
 
+
             .skill-card {
                 background-color: #1f2937;
-                padding: 30px;
+                padding: 30px 25px;
                 width: 220px;
-                border-radius: 12px;
-                transition: all o.3s ease;
-
+                border-radius: 14px;
+                border: 1px solid #374151;
+                transition: all 0.3s ease;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
             }
 
             .skill-card h3 {
                 color: #60a5fa;
-                font-size: 24px;
+                font-size: 23px;
                 margin-bottom: 15px;
             }
 
             .skill-card p {
                 font-size: 15px;
                 color: #d1d5db;
-
+                line-height: 1.7;
             }
 
             .skill-card:hover {
-                transform: translateY(-10px);
+                transform: translateY(-8px);
                 background-color: #374151;
+                border-color: #60a5fa;
+                box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
             }
 
             /* skills section mobile responsive */
@@ -306,47 +329,53 @@
             }
 
             /* project section */
+
             .projects {
-                padding: 80px 10px;
+                padding: 90px 20px;
                 background-color: #0f172a;
                 color: white;
                 text-align: center;
-
             }
 
             .projects h2 {
                 font-size: 36px;
-                margin-bottom: 40px
+                margin-bottom: 45px;
+                font-weight: 700;
+                color: #ffffff;
             }
+
 
             .projects-container {
                 display: flex;
                 justify-content: center;
-                gap: 25px;
-                flex-wrap: wrap
+                gap: 30px;
+                flex-wrap: wrap;
+                max-width: 1100px;
+                margin: auto;
             }
+
 
             .project-card {
                 background-color: #1e293b;
                 padding: 30px;
                 width: 250px;
-                border-radius: 12px;
+                border-radius: 14px;
+                border: 1px solid #334155;
                 transition: all 0.3s ease;
-
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             }
 
             .project-card h3 {
                 color: #60a5fa;
                 font-size: 22px;
                 margin-bottom: 15px;
-
             }
 
-            project-card p {
+            .project-card p {
                 color: #cbd5e1;
                 font-size: 15px;
+                line-height: 1.7;
                 margin-bottom: 20px;
-
             }
 
             .project-card a {
@@ -356,17 +385,19 @@
                 padding: 10px 20px;
                 border-radius: 6px;
                 text-decoration: none;
-                transition: 0.3s;
-
+                transition: 0.3s ease;
             }
 
             .project-card a:hover {
                 background-color: #1d4ed8;
+                transform: translateY(-2px);
             }
 
             .project-card:hover {
-                transform: translateY(-10px);
+                transform: translateY(-8px);
                 background-color: #334155;
+                border-color: #60a5fa;
+                box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
             }
 
             /* project section mobile responsive */
@@ -491,39 +522,41 @@
             }
 
             /* footer section */
+
             .footer {
                 background-color: #111827;
                 color: #ffffff;
-                padding: 30px 20px;
+                padding: 35px 20px;
                 text-align: center;
+                border-top: 1px solid #374151;
             }
 
             .footer p {
-                font-size: 16px;
-                margin-bottom: 15px;
+                font-size: 15px;
+                color: #cbd5e1;
+                margin-bottom: 20px;
             }
 
             .social-links {
-                display: fled;
+                display: flex;
                 justify-content: center;
+                align-items: center;
                 gap: 25px;
                 flex-wrap: wrap;
-
             }
 
             .social-links a {
                 color: #60a5fa;
                 text-decoration: none;
                 font-size: 16px;
+                font-weight: 500;
                 transition: all 0.3s ease;
                 display: inline-block;
-
             }
 
             .social-links a:hover {
                 color: #ffffff;
                 transform: translateY(-5px);
-
             }
 
             /* footer mobile and teblet resposive */
@@ -545,5 +578,39 @@
                 .social-links a {
                     font-size: 14px;
 
+                }
+            }
+            /* humburger icon */
+            .menu-toggle{
+                display:none;
+                background:none;
+                border:none;
+                font-size:28px;
+                cursor:pointer;
+            }
+            /*mobile responsive */
+            @media (max-width:768px){
+                .menu-toggle{
+                    display:block;
+
+                }
+                header{
+                    position:relative;
+
+                }
+                header nav{
+                    display:none;
+                    flex-direction:column;
+                    position:absolute;
+                    top:100%;
+                    right:0;
+                    width:100%;
+                    background-color:#111827;
+                    padding:20px;
+
+                }
+                header nav.active{
+                    display:flex;
+                    
                 }
             }
